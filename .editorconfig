@@ -1,0 +1,17 @@
+# This file is for unifying the coding style for different editors and IDEs
+# See editorconfig.org
+
+root = true
+
+[*.{kt,kts}]
+indent_size = 2
+# The following options are supported by IntelliJ only:
+ij_continuation_indent_size = 4
+ij_kotlin_continuation_indent_size = 4
+insert_final_newline = true
+
+[*.sql]
+indent_size = 2
+# Format SQL keywords in upper case. Also an IntelliJ-only setting.
+ij_sql_keyword_case = 2
+insert_final_newline = true

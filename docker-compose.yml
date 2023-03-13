@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_USER: repotest
+      MARIADB_DATABASE: repotest
+      MARIADB_ROOT_PASSWORD: repotest
+      MARIADB_PASSWORD: repotest
+    ports:
+      - "3309:3306"
