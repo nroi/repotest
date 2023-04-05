@@ -21,14 +21,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
     implementation 'org.flywaydb:flyway-core'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.flywaydb:flyway-mysql' // required for newer versions of Spring Boot.
     implementation 'org.jetbrains.kotlin:kotlin-reflect'
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.security:spring-security-test'
-
-//    api group: 'org.springframework.security', name: 'spring-security-config', version: springSecurityVersion
 }
 
 tasks.withType(KotlinCompile) {
